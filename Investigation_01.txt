@@ -1,0 +1,55 @@
+# WINDOWS FAILED LOGIN MONITORING
+## INVESTIGATION REPORT – 01
+
+### 1. Event Information
+- Event ID: 4625
+- Event Type: Failed Logon
+- Log Name: Security
+- Computer: SAKSHI-PC
+- Event Date: 14 November 2026
+- Event Time: 12:20:50 IST
+
+### 2. Authentication Details
+- Target User Name: Not Available (-)
+- Logon Type: 2 (Interactive)
+- Logon Process: User32
+- Process Name: C:\Windows\System32\svchost.exe
+- Authentication Package: Negotiate
+- IP Address: 127.0.0.1 (Localhost)
+- Workstation Name: Not Available
+
+### 3. Failure Information
+- Status: 0xC000006D
+- SubStatus: 0xC0000380
+- Failure Reason: An error occurred during logon.
+
+### 4. Investigation Findings
+
+- Identified and examined a Windows Security Event ID 4625, indicating a failed logon attempt.
+- The event recorded Logon Type 2, corresponding to an interactive logon.
+- The target account was not identified in the available event details.
+- The source IP address was 127.0.0.1, indicating a local loopback address.
+- The recorded logon process was User32, while the associated process was svchost.exe.
+- The authentication package was identified as Negotiate.
+- The available event information was insufficient to establish the exact cause of the authentication failure.
+
+### 5. Preliminary Conclusion
+
+The investigation identified a failed local interactive logon event on the Windows endpoint.
+
+Although Event ID 4625 indicates an authentication failure, the available evidence does not establish whether the activity was malicious or associated with normal system or user activity.
+
+Further investigation and correlation with other Windows Security Events would be required before classifying this activity as suspicious.
+
+### 6. Tools Used
+- Windows 11
+- Windows Event Viewer
+- Windows Security Logs
+- Event ID 4625
+
+### 7. Learning Outcomes
+- Understanding Windows authentication failure events.
+- Analyzing Windows Security Event XML data.
+- Identifying important authentication fields.
+- Distinguishing local authentication activity from remote connection attempts.
+- Documenting findings using a structured investigation approach.
